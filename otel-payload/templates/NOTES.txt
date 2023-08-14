@@ -1,0 +1,2 @@
+1. Get the Server URL by running these commands:
+

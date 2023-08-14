@@ -1,0 +1,29 @@
+{{- if .Values.client.autoscaling.enabled }}
+apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: {{ include "otel-payload.fullname" . }}-client
+  labels:
+    {{- include "otel-payload.labels" . | nindent 4 }}
+    role: client
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: {{ include "otel-payload.fullname" . }}
+  minReplicas: {{ .Values.client.autoscaling.minReplicas }}
+  maxReplicas: {{ .Values.client.autoscaling.maxReplicas }}
+  metrics:
+    {{- if .Values.client.autoscaling.targetCPUUtilizationPercentage }}
+    - type: Resource
+      resource:
+        name: cpu
+        targetAverageUtilization: {{ .Values.client.autoscaling.targetCPUUtilizationPercentage }}
+    {{- end }}
+    {{- if .Values.client.autoscaling.targetMemoryUtilizationPercentage }}
+    - type: Resource
+      resource:
+        name: memory
+        targetAverageUtilization: {{ .Values.client.autoscaling.targetMemoryUtilizationPercentage }}
+    {{- end }}
+{{- end }}

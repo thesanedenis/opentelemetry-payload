@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "otel-payload.fullname" . }}-client
+  labels:
+    {{- include "otel-payload.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.client.autoscaling.enabled }}
+  replicas: {{ .Values.client.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "otel-payload.selectorLabels" . | nindent 6 }}
+      role: client
+  template:
+    metadata:
+      {{- with .Values.client.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "otel-payload.selectorLabels" . | nindent 8 }}
+        role: client
+    spec:
+      {{- with .Values.client.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "otel-payload.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.client.podSecurityContext | nindent 8 }}
+      containers:
+        - name: {{ .Chart.Name }}-client
+          securityContext:
+            {{- toYaml .Values.client.securityContext | nindent 12 }}
+          image: "{{ .Values.client.image.repository }}:{{ .Values.client.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.client.image.pullPolicy }}
+          env:
+            - name: DEMO_SERVER_ENDPOINT
+              value: "http://{{ .Release.Name }}-server:{{ .Values.server.service.port }}/hello"
+            {{- toYaml .Values.client.envs | nindent 12 }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.client.service.port }}
+              protocol: TCP
+            - name: prom
+              containerPort: 9090
+              protocol: TCP
+#          livenessProbe:
+#            httpGet:
+#              path: /metrics
+#              port: prom
+#          readinessProbe:
+#            httpGet:
+#              path: /metrics
+#              port: prom
+          resources:
+            {{- toYaml .Values.client.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.client.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.client.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
