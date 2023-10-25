@@ -28,7 +28,7 @@ server:
   fullnameOverride: ""
   envs:
   - name: OTEL_EXPORTER_OTLP_ENDPOINT
-    value: "otel-collector.monitoring.svc.cluster.local:4317"
+    value: "grafana-agent.monitoring.svc:4317"
 
   podAnnotations: {}
   
@@ -103,9 +103,9 @@ client:
   fullnameOverride: ""
   envs:
     - name: OTEL_EXPORTER_OTLP_ENDPOINT
-      value: "otel-collector.monitoring.svc.cluster.local:4317"
+      value: "grafana-agent.monitoring.svc:4317"
     - name: DEMO_SERVER_ENDPOINT
-      value: "http://otel-payload-server.monitoring.svc.cluster.local:7080/hello"
+      value: "http://payload-otel-payload-server.default.svc.cluster.local:7080/hello"
 
 
   podAnnotations: {}
