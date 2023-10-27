@@ -12,13 +12,15 @@ docker run --network host gardnera/tracepusher:v0.8.0  \
 --trace-id $trace_id \
 --span-id $span_id
 
+
 docker run --network host gardnera/logpusher:v0.1.0 \
   --endpoint http://127.0.0.1:4318 \
   --content "This is my log line from My Lenovov-DevOps host" \
   --debug True \
   --timestamp $timestamp \
   --trace-id $trace_id \
-  --span-id $span_id
+  --span-id $span_id 
+
 
 
 
