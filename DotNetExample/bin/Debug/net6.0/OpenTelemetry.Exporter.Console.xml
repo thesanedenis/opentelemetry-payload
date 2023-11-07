@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenTelemetry.Exporter.Console</name>
+    </assembly>
+    <members>
+        <member name="P:OpenTelemetry.Exporter.ConsoleExporterOptions.Targets">
+            <summary>
+            Gets or sets the output targets for the console exporter.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.ConsoleExporterOutputTargets.Console">
+            <summary>
+            Output to the Console (stdout).
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.ConsoleExporterOutputTargets.Debug">
+            <summary>
+            Output to the Debug trace.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Trace.ConsoleExporterHelperExtensions.AddConsoleExporter(OpenTelemetry.Trace.TracerProviderBuilder)">
+            <summary>
+            Adds Console exporter to the TracerProvider.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> builder to use.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Trace.ConsoleExporterHelperExtensions.AddConsoleExporter(OpenTelemetry.Trace.TracerProviderBuilder,System.Action{OpenTelemetry.Exporter.ConsoleExporterOptions})">
+            <summary>
+            Adds Console exporter to the TracerProvider.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> builder to use.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.ConsoleExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Trace.ConsoleExporterHelperExtensions.AddConsoleExporter(OpenTelemetry.Trace.TracerProviderBuilder,System.String,System.Action{OpenTelemetry.Exporter.ConsoleExporterOptions})">
+            <summary>
+            Adds Console exporter to the TracerProvider.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> builder to use.</param>
+            <param name="name">Name which is used when retrieving options.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.ConsoleExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Trace.SpanAttributeConstants">
+            <summary>
+            Defines well-known span attribute keys.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Logs.ConsoleExporterLoggingExtensions.AddConsoleExporter(OpenTelemetry.Logs.OpenTelemetryLoggerOptions)">
+            <summary>
+            Adds Console exporter with OpenTelemetryLoggerOptions.
+            </summary>
+            <param name="loggerOptions"><see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> options to use.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Logs.ConsoleExporterLoggingExtensions.AddConsoleExporter(OpenTelemetry.Logs.OpenTelemetryLoggerOptions,System.Action{OpenTelemetry.Exporter.ConsoleExporterOptions})">
+            <summary>
+            Adds Console exporter with OpenTelemetryLoggerOptions.
+            </summary>
+            <param name="loggerOptions"><see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> options to use.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.ConsoleExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> to chain the calls.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Metrics.ConsoleExporterMetricsExtensions">
+            <summary>
+            Extension methods to simplify registering of the Console exporter.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.ConsoleExporterMetricsExtensions.AddConsoleExporter(OpenTelemetry.Metrics.MeterProviderBuilder)">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.ConsoleMetricExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> using default options.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.ConsoleExporterMetricsExtensions.AddConsoleExporter(OpenTelemetry.Metrics.MeterProviderBuilder,System.Action{OpenTelemetry.Exporter.ConsoleExporterOptions})">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.ConsoleMetricExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/>.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <param name="configureExporter">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.ConsoleExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.ConsoleExporterMetricsExtensions.AddConsoleExporter(OpenTelemetry.Metrics.MeterProviderBuilder,System.String,System.Action{OpenTelemetry.Exporter.ConsoleExporterOptions})">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.ConsoleMetricExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/>.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <param name="name">Name which is used when retrieving options.</param>
+            <param name="configureExporter">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.ConsoleExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.ConsoleExporterMetricsExtensions.AddConsoleExporter(OpenTelemetry.Metrics.MeterProviderBuilder,System.Action{OpenTelemetry.Exporter.ConsoleExporterOptions,OpenTelemetry.Metrics.MetricReaderOptions})">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.ConsoleMetricExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/>.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <param name="configureExporterAndMetricReader">Callback action for
+            configuring <see cref="T:OpenTelemetry.Exporter.ConsoleExporterOptions"/> and <see
+            cref="T:OpenTelemetry.Metrics.MetricReaderOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.ConsoleExporterMetricsExtensions.AddConsoleExporter(OpenTelemetry.Metrics.MeterProviderBuilder,System.String,System.Action{OpenTelemetry.Exporter.ConsoleExporterOptions,OpenTelemetry.Metrics.MetricReaderOptions})">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.ConsoleMetricExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/>.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <param name="name">Name which is used when retrieving options.</param>
+            <param name="configureExporterAndMetricReader">Callback action for
+            configuring <see cref="T:OpenTelemetry.Exporter.ConsoleExporterOptions"/> and <see
+            cref="T:OpenTelemetry.Metrics.MetricReaderOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Metrics.Base2ExponentialBucketHistogram">
+             <content>
+             This file contains an implementation for LowerBoundary.
+             LowerBoundary returns the lower boundary of a bucket for
+             a Base2ExponentialBucketHistogram.
+            
+             The LowerBoundary implementation is intentionally placed
+             in its own file so that components like the Console exporter
+             can include it.
+             </content>
+        </member>
+        <member name="T:OpenTelemetry.Internal.OpenTelemetrySdkEventSource">
+            <summary>
+            EventSource implementation for OpenTelemetry SDK implementation.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Internal.ExceptionExtensions.ToInvariantString(System.Exception)">
+            <summary>
+            Returns a culture-independent string representation of the given <paramref name="exception"/> object,
+            appropriate for diagnostics tracing.
+            </summary>
+            <param name="exception">Exception to convert to string.</param>
+            <returns>Exception as string with no culture.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Internal.Guard">
+            <summary>
+            Methods for guarding against exception throwing values.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNull(System.Object,System.String)">
+            <summary>
+            Throw an exception if the value is null.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNullOrEmpty(System.String,System.String)">
+            <summary>
+            Throw an exception if the value is null or empty.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNullOrWhitespace(System.String,System.String)">
+            <summary>
+            Throw an exception if the value is null or whitespace.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfZero(System.Int32,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is zero.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="message">The message to use in the thrown exception.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfInvalidTimeout(System.Int32,System.String)">
+            <summary>
+            Throw an exception if the value is not considered a valid timeout.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfOutOfRange(System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is not within the given range.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <param name="min">The inclusive lower bound.</param>
+            <param name="max">The inclusive upper bound.</param>
+            <param name="minName">The name of the lower bound.</param>
+            <param name="maxName">The name of the upper bound.</param>
+            <param name="message">An optional custom message to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfOutOfRange(System.Double,System.String,System.Double,System.Double,System.String,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is not within the given range.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <param name="min">The inclusive lower bound.</param>
+            <param name="max">The inclusive upper bound.</param>
+            <param name="minName">The name of the lower bound.</param>
+            <param name="maxName">The name of the upper bound.</param>
+            <param name="message">An optional custom message to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNotOfType``1(System.Object,System.String)">
+            <summary>
+            Throw an exception if the value is not of the expected type.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <typeparam name="T">The type attempted to convert to.</typeparam>
+            <returns>The value casted to the specified type.</returns>
+        </member>
+        <member name="T:System.Runtime.CompilerServices.CallerArgumentExpressionAttribute">
+            <summary>Allows capturing of the expressions passed to a method.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.NotNullAttribute">
+            <summary>Specifies that an output is not <see langword="null"/> even if
+            the corresponding type allows it. Specifies that an input argument was
+            not <see langword="null"/> when the call returns.</summary>
+        </member>
+        <member name="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute">
+            <summary>
+            Suppresses reporting of a specific rule violation, allowing multiple suppressions on a
+            single code artifact.
+            </summary>
+            <remarks>
+            <see cref="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute"/> is different than
+            <see cref="T:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute"/> in that it doesn't have a
+            <see cref="T:System.Diagnostics.ConditionalAttribute"/>. So it is always preserved in the compiled assembly.
+            </remarks>
+        </member>
+        <member name="M:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute"/>
+            class, specifying the category of the tool and the identifier for an analysis rule.
+            </summary>
+            <param name="category">The category for the attribute.</param>
+            <param name="checkId">The identifier of the analysis rule the attribute applies to.</param>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category">
+            <summary>
+            Gets the category identifying the classification of the attribute.
+            </summary>
+            <remarks>
+            The <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category"/> property describes the tool or tool analysis category
+            for which a message suppression attribute applies.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.CheckId">
+            <summary>
+            Gets the identifier of the analysis tool rule to be suppressed.
+            </summary>
+            <remarks>
+            Concatenated together, the <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Category"/> and <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.CheckId"/>
+            properties form a unique check identifier.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Scope">
+            <summary>
+            Gets or sets the scope of the code that is relevant for the attribute.
+            </summary>
+            <remarks>
+            The Scope property is an optional argument that specifies the metadata scope for which
+            the attribute is relevant.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Target">
+            <summary>
+            Gets or sets a fully qualified path that represents the target of the attribute.
+            </summary>
+            <remarks>
+            The <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Target"/> property is an optional argument identifying the analysis target
+            of the attribute. An example value is "System.IO.Stream.ctor():System.Void".
+            Because it is fully qualified, it can be long, particularly for targets such as parameters.
+            The analysis tool user interface should be capable of automatically formatting the parameter.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.MessageId">
+            <summary>
+            Gets or sets an optional argument expanding on exclusion criteria.
+            </summary>
+            <remarks>
+            The <see cref="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.MessageId"/> property is an optional argument that specifies additional
+            exclusion where the literal metadata target is not sufficiently precise. For example,
+            the <see cref="T:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute"/> cannot be applied within a method,
+            and it may be desirable to suppress a violation against a statement in the method that will
+            give a rule violation, but not against all statements in the method.
+            </remarks>
+        </member>
+        <member name="P:System.Diagnostics.CodeAnalysis.UnconditionalSuppressMessageAttribute.Justification">
+            <summary>
+            Gets or sets the justification for suppressing the code analysis message.
+            </summary>
+        </member>
+    </members>
+</doc>

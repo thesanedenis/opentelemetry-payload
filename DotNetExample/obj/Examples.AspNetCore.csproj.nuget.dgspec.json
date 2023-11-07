@@ -1,0 +1,4043 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/examples/AspNetCore/Examples.AspNetCore.csproj": {}
+  },
+  "projects": {
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/examples/AspNetCore/Examples.AspNetCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/examples/AspNetCore/Examples.AspNetCore.csproj",
+        "projectName": "Examples.AspNetCore",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/examples/AspNetCore/Examples.AspNetCore.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/examples/AspNetCore/obj/",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Console/OpenTelemetry.Exporter.Console.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Console/OpenTelemetry.Exporter.Console.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Jaeger/OpenTelemetry.Exporter.Jaeger.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Jaeger/OpenTelemetry.Exporter.Jaeger.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/OpenTelemetry.Exporter.Prometheus.AspNetCore.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/OpenTelemetry.Exporter.Prometheus.AspNetCore.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Zipkin/OpenTelemetry.Exporter.Zipkin.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Zipkin/OpenTelemetry.Exporter.Zipkin.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Extensions.Hosting/OpenTelemetry.Extensions.Hosting.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Extensions.Hosting/OpenTelemetry.Extensions.Hosting.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.AspNetCore/OpenTelemetry.Instrumentation.AspNetCore.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.AspNetCore/OpenTelemetry.Instrumentation.AspNetCore.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.Http/OpenTelemetry.Instrumentation.Http.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.Http/OpenTelemetry.Instrumentation.Http.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "OpenTelemetry.Instrumentation.Runtime": {
+              "target": "Package",
+              "version": "[1.0.0, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, 6.4.0]",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[6.0.5, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[6.0.24, 6.0.24]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj",
+        "projectName": "OpenTelemetry.Api.ProviderBuilderExtensions",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/OpenTelemetry.Api.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/OpenTelemetry.Api.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/OpenTelemetry.Api.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/OpenTelemetry.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/OpenTelemetry.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/OpenTelemetry.Api.csproj",
+        "projectName": "OpenTelemetry.Api",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/OpenTelemetry.Api.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Diagnostics.DiagnosticSource": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Console/OpenTelemetry.Exporter.Console.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Console/OpenTelemetry.Exporter.Console.csproj",
+        "projectName": "OpenTelemetry.Exporter.Console",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Console/OpenTelemetry.Exporter.Console.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Console/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Jaeger/OpenTelemetry.Exporter.Jaeger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Jaeger/OpenTelemetry.Exporter.Jaeger.csproj",
+        "projectName": "OpenTelemetry.Exporter.Jaeger",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Jaeger/OpenTelemetry.Exporter.Jaeger.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Jaeger/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6.0",
+          "netstandard2.0",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Threading.Tasks.Extensions": {
+              "target": "Package",
+              "version": "[4.5.4, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs.csproj",
+        "projectName": "OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "netstandard2.0",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj"
+              },
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj",
+        "projectName": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/OpenTelemetry.Exporter.OpenTelemetryProtocol.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.OpenTelemetryProtocol/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6.0",
+          "netstandard2.0",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.19.4, 4.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.43.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.44.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.19.4, 4.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc": {
+              "target": "Package",
+              "version": "[2.44.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.44.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Reflection.Emit.Lightweight": {
+              "target": "Package",
+              "version": "[4.7.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.19.4, 4.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc": {
+              "target": "Package",
+              "version": "[2.44.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.44.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Reflection.Emit.Lightweight": {
+              "target": "Package",
+              "version": "[4.7.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.19.4, 4.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.43.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.44.0, 3.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Reflection.Emit.Lightweight": {
+              "target": "Package",
+              "version": "[4.7.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/OpenTelemetry.Exporter.Prometheus.AspNetCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/OpenTelemetry.Exporter.Prometheus.AspNetCore.csproj",
+        "projectName": "OpenTelemetry.Exporter.Prometheus.AspNetCore",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/OpenTelemetry.Exporter.Prometheus.AspNetCore.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Prometheus.AspNetCore/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Zipkin/OpenTelemetry.Exporter.Zipkin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Zipkin/OpenTelemetry.Exporter.Zipkin.csproj",
+        "projectName": "OpenTelemetry.Exporter.Zipkin",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Zipkin/OpenTelemetry.Exporter.Zipkin.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Exporter.Zipkin/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6.0",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Json": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Extensions.Hosting/OpenTelemetry.Extensions.Hosting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Extensions.Hosting/OpenTelemetry.Extensions.Hosting.csproj",
+        "projectName": "OpenTelemetry.Extensions.Hosting",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Extensions.Hosting/OpenTelemetry.Extensions.Hosting.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Extensions.Hosting/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.AspNetCore/OpenTelemetry.Instrumentation.AspNetCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.AspNetCore/OpenTelemetry.Instrumentation.AspNetCore.csproj",
+        "projectName": "OpenTelemetry.Instrumentation.AspNetCore",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.AspNetCore/OpenTelemetry.Instrumentation.AspNetCore.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.AspNetCore/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0",
+          "net7.0",
+          "netstandard2.0",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, 6.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.1.1, 6.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, 6.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[2.1.1, 6.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "System.Text.Encodings.Web": {
+              "target": "Package",
+              "version": "[4.7.2, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.Http/OpenTelemetry.Instrumentation.Http.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.Http/OpenTelemetry.Instrumentation.Http.csproj",
+        "projectName": "OpenTelemetry.Instrumentation.Http",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.Http/OpenTelemetry.Instrumentation.Http.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Instrumentation.Http/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj",
+        "projectName": "OpenTelemetry",
+        "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/OpenTelemetry.csproj",
+        "packagesPath": "/home/sane/.nuget/packages/",
+        "outputPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/NuGet.config",
+          "/home/sane/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net462",
+          "net6.0",
+          "netstandard2.0",
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj"
+              }
+            }
+          },
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj"
+              }
+            }
+          },
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj"
+              }
+            }
+          },
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj": {
+                "projectPath": "/home/sane/sandbox/opentelemetry-net/opentelemetry-dotnet/src/OpenTelemetry.Api.ProviderBuilderExtensions/OpenTelemetry.Api.ProviderBuilderExtensions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Microsoft.Extensions.Logging.Configuration": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.1, 2.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "MinVer": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, 5.0.0)",
+              "versionCentrallyManaged": true
+            },
+            "StyleCop.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, 2.0.0)",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "BenchmarkDotNet": "[0.13.5, 0.14.0)",
+            "CommandLineParser": "[2.9.1, 3.0.0)",
+            "dotnet-xunit": "[2.3.1, 3.0.0)",
+            "Google.Protobuf": "[3.19.4, 4.0.0)",
+            "Grpc": "[2.44.0, 3.0.0)",
+            "Grpc.AspNetCore": "[2.50.0, 3.0.0)",
+            "Grpc.AspNetCore.Server": "[2.48.0, 3.0.0)",
+            "Grpc.Net.Client": "[2.43.0, 3.0.0)",
+            "Grpc.Tools": "[2.44.0, 3.0.0)",
+            "Microsoft.AspNetCore.Http.Abstractions": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Http.Features": "[2.1.1, 6.0.0)",
+            "Microsoft.AspNetCore.Mvc.Testing": "[7.0.1, )",
+            "Microsoft.AspNetCore.TestHost": "[7.0.0, )",
+            "Microsoft.CodeAnalysis.PublicApiAnalyzers": "[3.3.3, 3.3.3]",
+            "Microsoft.CodeCoverage": "[17.4.1, 17.4.1]",
+            "Microsoft.Data.SqlClient": "[2.1.2, )",
+            "Microsoft.DotNet.ApiCompat": "[6.0.0-beta.21308.1, )",
+            "Microsoft.Extensions.DependencyInjection": "[3.1.0, )",
+            "Microsoft.Extensions.DependencyInjection.Abstractions": "[3.1.0, )",
+            "Microsoft.Extensions.Hosting": "[3.1.6, 5.0.0)",
+            "Microsoft.Extensions.Hosting.Abstractions": "[2.1.0, )",
+            "Microsoft.Extensions.Http": "[3.1.20, )",
+            "Microsoft.Extensions.Logging": "[3.1.0, )",
+            "Microsoft.Extensions.Logging.Abstractions": "[6.0.0, )",
+            "Microsoft.Extensions.Logging.Configuration": "[3.1.0, )",
+            "Microsoft.Extensions.Options": "[3.1.0, )",
+            "Microsoft.NET.Test.Sdk": "[17.4.1, 17.4.1]",
+            "Microsoft.NETFramework.ReferenceAssemblies": "[1.0.3, 2.0.0)",
+            "Microsoft.SourceLink.GitHub": "[1.1.1, 2.0.0)",
+            "MinVer": "[4.2.0, 5.0.0)",
+            "Moq": "[4.18.3, 5.0.0)",
+            "OpenTelemetry.Instrumentation.Runtime": "[1.0.0, 2.0.0)",
+            "OpenTracing": "[0.12.1, 0.13.0)",
+            "RabbitMQ.Client": "[6.4.0, 7.0.0)",
+            "StyleCop.Analyzers": "[1.2.0-beta.435, 2.0.0)",
+            "Swashbuckle.AspNetCore": "[6.4.0, 6.4.0]",
+            "System.Diagnostics.DiagnosticSource": "[7.0.0, )",
+            "System.Net.Http": "[4.3.4, )",
+            "System.Reflection.Emit.Lightweight": "[4.7.0, )",
+            "System.Text.Encodings.Web": "[4.7.2, )",
+            "System.Text.Json": "[4.7.2, )",
+            "System.Threading.Tasks.Extensions": "[4.5.4, )",
+            "Testcontainers.MsSql": "[3.0.0, )",
+            "Testcontainers.SqlEdge": "[3.0.0, )",
+            "xunit": "[2.4.2, 3.0.0)",
+            "xunit.runner.visualstudio": "[2.4.5, 3.0.0)"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

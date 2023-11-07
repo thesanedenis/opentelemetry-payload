@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenTelemetry.Exporter.Prometheus.AspNetCore</name>
+    </assembly>
+    <members>
+        <member name="T:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions">
+            <summary>
+            Prometheus exporter options.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions.ScrapeEndpointPath">
+            <summary>
+            Gets or sets the path to use for the scraping endpoint. Default value: "/metrics".
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions.ScrapeResponseCacheDurationMilliseconds">
+            <summary>
+            Gets or sets the cache duration in milliseconds for scrape responses. Default value: 300.
+            </summary>
+            <remarks>
+            Note: Specify 0 to disable response caching.
+            </remarks>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.PrometheusExporterMiddleware">
+            <summary>
+            ASP.NET Core middleware for exposing a Prometheus metrics scraping endpoint.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.PrometheusExporterMiddleware.#ctor(OpenTelemetry.Metrics.MeterProvider,Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenTelemetry.Exporter.PrometheusExporterMiddleware"/> class.
+            </summary>
+            <param name="meterProvider"><see cref="T:OpenTelemetry.Metrics.MeterProvider"/>.</param>
+            <param name="next"><see cref="T:Microsoft.AspNetCore.Http.RequestDelegate"/>.</param>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.PrometheusExporterMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invoke.
+            </summary>
+            <param name="httpContext"> context.</param>
+            <returns>Task.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporter">
+            <summary>
+            Exporter of OpenTelemetry metrics to Prometheus.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.Prometheus.PrometheusExporter.#ctor(OpenTelemetry.Exporter.Prometheus.PrometheusExporterOptions)">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporter"/> class.
+            </summary>
+            <param name="options"><see cref="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporterOptions"/>.</param>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.Prometheus.PrometheusExporter.Collect">
+            <summary>
+            Gets or sets the Collect delegate.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.Prometheus.PrometheusExporter.Export(OpenTelemetry.Batch{OpenTelemetry.Metrics.Metric}@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.Prometheus.PrometheusExporter.Dispose(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporterEventSource">
+            <summary>
+            EventSource events emitted from the project.
+            </summary>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporterOptions">
+            <summary>
+            Prometheus exporter options.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.Prometheus.PrometheusExporterOptions.ScrapeResponseCacheDurationMilliseconds">
+            <summary>
+            Gets or sets the cache duration in milliseconds for scrape responses. Default value: 300.
+            </summary>
+            <remarks>
+            Note: Specify 0 to disable response caching.
+            </remarks>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.Prometheus.PrometheusSerializer">
+            <summary>
+            Basic PrometheusSerializer which has no OpenTelemetry dependency.
+            </summary>
+            <summary>
+            OpenTelemetry additions to the PrometheusSerializer.
+            </summary>
+        </member>
+        <member name="T:OpenTelemetry.Metrics.PrometheusExporterMeterProviderBuilderExtensions">
+            <summary>
+            Extension methods to simplify registering a PrometheusExporter.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.PrometheusExporterMeterProviderBuilderExtensions.AddPrometheusExporter(OpenTelemetry.Metrics.MeterProviderBuilder)">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/>.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.PrometheusExporterMeterProviderBuilderExtensions.AddPrometheusExporter(OpenTelemetry.Metrics.MeterProviderBuilder,System.Action{OpenTelemetry.Exporter.PrometheusAspNetCoreOptions})">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/>.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Metrics.PrometheusExporterMeterProviderBuilderExtensions.AddPrometheusExporter(OpenTelemetry.Metrics.MeterProviderBuilder,System.String,System.Action{OpenTelemetry.Exporter.PrometheusAspNetCoreOptions})">
+            <summary>
+            Adds <see cref="T:OpenTelemetry.Exporter.Prometheus.PrometheusExporter"/> to the <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/>.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> builder to use.</param>
+            <param name="name">Name which is used when retrieving options.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Metrics.MeterProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Internal.ExceptionExtensions.ToInvariantString(System.Exception)">
+            <summary>
+            Returns a culture-independent string representation of the given <paramref name="exception"/> object,
+            appropriate for diagnostics tracing.
+            </summary>
+            <param name="exception">Exception to convert to string.</param>
+            <returns>Exception as string with no culture.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Internal.Guard">
+            <summary>
+            Methods for guarding against exception throwing values.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNull(System.Object,System.String)">
+            <summary>
+            Throw an exception if the value is null.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNullOrEmpty(System.String,System.String)">
+            <summary>
+            Throw an exception if the value is null or empty.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNullOrWhitespace(System.String,System.String)">
+            <summary>
+            Throw an exception if the value is null or whitespace.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfZero(System.Int32,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is zero.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="message">The message to use in the thrown exception.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfInvalidTimeout(System.Int32,System.String)">
+            <summary>
+            Throw an exception if the value is not considered a valid timeout.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfOutOfRange(System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is not within the given range.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <param name="min">The inclusive lower bound.</param>
+            <param name="max">The inclusive upper bound.</param>
+            <param name="minName">The name of the lower bound.</param>
+            <param name="maxName">The name of the upper bound.</param>
+            <param name="message">An optional custom message to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfOutOfRange(System.Double,System.String,System.Double,System.Double,System.String,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is not within the given range.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <param name="min">The inclusive lower bound.</param>
+            <param name="max">The inclusive upper bound.</param>
+            <param name="minName">The name of the lower bound.</param>
+            <param name="maxName">The name of the upper bound.</param>
+            <param name="message">An optional custom message to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNotOfType``1(System.Object,System.String)">
+            <summary>
+            Throw an exception if the value is not of the expected type.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <typeparam name="T">The type attempted to convert to.</typeparam>
+            <returns>The value casted to the specified type.</returns>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.PrometheusExporterApplicationBuilderExtensions">
+            <summary>
+            Provides extension methods for <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> to add
+            Prometheus scraping endpoint.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.PrometheusExporterApplicationBuilderExtensions.UseOpenTelemetryPrometheusScrapingEndpoint(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds OpenTelemetry Prometheus scraping endpoint middleware to an
+            <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> instance.
+            </summary>
+            <remarks>Note: A branched pipeline is created for the route
+            specified by <see
+            cref="P:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions.ScrapeEndpointPath"/>.</remarks>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> to add
+            middleware to.</param>
+            <returns>A reference to the original <see
+            cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> for chaining calls.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.PrometheusExporterApplicationBuilderExtensions.UseOpenTelemetryPrometheusScrapingEndpoint(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String)">
+            <summary>
+            Adds OpenTelemetry Prometheus scraping endpoint middleware to an
+            <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> instance.
+            </summary>
+            <remarks>Note: A branched pipeline is created for the supplied
+            <paramref name="path"/>.</remarks>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> to add
+            middleware to.</param>
+            <param name="path">Path to use for the branched pipeline.</param>
+            <returns>A reference to the original <see
+            cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> for chaining calls.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.PrometheusExporterApplicationBuilderExtensions.UseOpenTelemetryPrometheusScrapingEndpoint(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Boolean})">
+            <summary>
+            Adds OpenTelemetry Prometheus scraping endpoint middleware to an
+            <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> instance.
+            </summary>
+            <remarks>Note: A branched pipeline is created for the supplied
+            <paramref name="predicate"/>.</remarks>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> to add
+            middleware to.</param>
+            <param name="predicate">Predicate for deciding if a given
+            <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/> should be branched.</param>
+            <returns>A reference to the original <see
+            cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> for chaining calls.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.PrometheusExporterApplicationBuilderExtensions.UseOpenTelemetryPrometheusScrapingEndpoint(Microsoft.AspNetCore.Builder.IApplicationBuilder,OpenTelemetry.Metrics.MeterProvider,System.Func{Microsoft.AspNetCore.Http.HttpContext,System.Boolean},System.String,System.Action{Microsoft.AspNetCore.Builder.IApplicationBuilder},System.String)">
+            <summary>
+            Adds OpenTelemetry Prometheus scraping endpoint middleware to an
+            <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> instance.
+            </summary>
+            <remarks>Note: A branched pipeline is created based on the <paramref
+            name="predicate"/> or <paramref name="path"/>. If neither <paramref
+            name="predicate"/> nor <paramref name="path"/> are provided then
+            <see cref="P:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions.ScrapeEndpointPath"/> is
+            used.</remarks>
+            <param name="app">The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> to add
+            middleware to.</param>
+            <param name="meterProvider">Optional <see cref="T:OpenTelemetry.Metrics.MeterProvider"/>
+            containing a Prometheus exporter otherwise the primary SDK provider
+            will be resolved using application services.</param>
+            <param name="predicate">Optional predicate for deciding if a given
+            <see cref="T:Microsoft.AspNetCore.Http.HttpContext"/> should be branched. If supplied <paramref
+            name="path"/> is ignored.</param>
+            <param name="path">Optional path to use for the branched pipeline.
+            Ignored if <paramref name="predicate"/> is supplied.</param>
+            <param name="configureBranchedPipeline">Optional callback to
+            configure the branched pipeline. Called before registration of the
+            Prometheus middleware.</param>
+            <param name="optionsName">Optional name used to retrieve <see
+            cref="T:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions"/>.</param>
+            <returns>A reference to the original <see
+            cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/> for chaining calls.</returns>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.PrometheusExporterEndpointRouteBuilderExtensions">
+            <summary>
+            Provides extension methods for <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> to add
+            Prometheus scraping endpoint.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.PrometheusExporterEndpointRouteBuilderExtensions.MapPrometheusScrapingEndpoint(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)">
+            <summary>
+            Adds OpenTelemetry Prometheus scraping endpoint middleware to an
+            <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> instance.
+            </summary>
+            <remarks>Note: A branched pipeline is created for the route
+            specified by <see
+            cref="P:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions.ScrapeEndpointPath"/>.</remarks>
+            <param name="endpoints">The <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> to add
+            middleware to.</param>
+            <returns>A convention routes for the Prometheus scraping endpoint.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.PrometheusExporterEndpointRouteBuilderExtensions.MapPrometheusScrapingEndpoint(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String)">
+            <summary>
+            Adds OpenTelemetry Prometheus scraping endpoint middleware to an
+            <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> instance.
+            </summary>
+            <param name="endpoints">The <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> to add
+            middleware to.</param>
+            <param name="path">The path to use for the branched pipeline.</param>
+            <returns>A convention routes for the Prometheus scraping endpoint.</returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.PrometheusExporterEndpointRouteBuilderExtensions.MapPrometheusScrapingEndpoint(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder,System.String,OpenTelemetry.Metrics.MeterProvider,System.Action{Microsoft.AspNetCore.Builder.IApplicationBuilder},System.String)">
+            <summary>
+            Adds OpenTelemetry Prometheus scraping endpoint middleware to an
+            <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> instance.
+            </summary>
+            <param name="endpoints">The <see cref="T:Microsoft.AspNetCore.Routing.IEndpointRouteBuilder"/> to add
+            middleware to.</param>
+            <param name="path">Optional path to use for the branched pipeline.
+            If not provided then <see cref="P:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions.ScrapeEndpointPath"/>
+            is used.</param>
+            <param name="meterProvider">Optional <see cref="T:OpenTelemetry.Metrics.MeterProvider"/>
+            containing a Prometheus exporter otherwise the primary SDK provider
+            will be resolved using application services.</param>
+            <param name="configureBranchedPipeline">Optional callback to
+            configure the branched pipeline. Called before registration of the
+            Prometheus middleware.</param>
+            <param name="optionsName">Optional name used to retrieve <see
+            cref="T:OpenTelemetry.Exporter.PrometheusAspNetCoreOptions"/>.</param>
+            <returns>A convention routes for the Prometheus scraping endpoint.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenTelemetry.Exporter.Jaeger</name>
+    </assembly>
+    <members>
+        <member name="F:Thrift.Protocol.TCompactProtocol._lastField">
+            <summary>
+                Used to keep track of the last field for the current and previous structs, so we can do the delta stuff.
+            </summary>
+        </member>
+        <member name="F:Thrift.Protocol.TCompactProtocol._booleanField">
+            <summary>
+                If we encounter a boolean field begin, save the TField here so it can have the value incorporated.
+            </summary>
+        </member>
+        <member name="M:Thrift.Protocol.TCompactProtocol.WriteStructBegin(Thrift.Protocol.Entities.TStruct)">
+            <summary>
+                Write a struct begin. This doesn't actually put anything on the wire. We
+                use it as an opportunity to put special placeholder markers on the field
+                stack so we can get the field id deltas correct.
+            </summary>
+        </member>
+        <member name="T:Thrift.Protocol.TCompactProtocol.Types">
+            <summary>
+                All of the on-wire exType codes.
+            </summary>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerExporterEventSource">
+            <summary>
+            EventSource events emitted from the project.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerSpanRef.ToString">
+            <summary>
+            <seealso cref="T:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerSpanRefType"/>
+            </summary>
+            <returns>A string representation of the object.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerSpanRefType">
+            <summary>
+            Represents the different types of Jaeger Spans.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerSpanRefType.CHILD_OF">
+            <summary>
+            A child span.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerSpanRefType.FOLLOWS_FROM">
+            <summary>
+            A sibling span.
+            </summary>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerTagType">
+            <summary>
+            Indicates the data type of a Jaeger tag.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerTagType.STRING">
+            <summary>
+            Tag contains a string.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerTagType.DOUBLE">
+            <summary>
+            Tag contains a double.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerTagType.BOOL">
+            <summary>
+            Tag contains a boolean.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerTagType.LONG">
+            <summary>
+            Tag contains a long.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerTagType.BINARY">
+            <summary>
+            Tag contains binary data.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.Jaeger.Implementation.JaegerUdpClient.Dispose">
+            <inheritdoc/>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.JaegerExporter.Export(OpenTelemetry.Batch{System.Diagnostics.Activity}@)">
+            <inheritdoc/>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.JaegerExporter.Dispose(System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.JaegerExporterOptions">
+            <summary>
+            Jaeger exporter options.
+            OTEL_EXPORTER_JAEGER_AGENT_HOST, OTEL_EXPORTER_JAEGER_AGENT_PORT
+            environment variables are parsed during object construction.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Exporter.JaegerExporterOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OpenTelemetry.Exporter.JaegerExporterOptions"/> class.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.Protocol">
+            <summary>
+            Gets or sets the <see cref="T:OpenTelemetry.Exporter.JaegerExportProtocol"/> to use when
+            communicating to Jaeger. Default value: <see
+            cref="F:OpenTelemetry.Exporter.JaegerExportProtocol.UdpCompactThrift"/>.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.AgentHost">
+            <summary>
+            Gets or sets the Jaeger agent host. Default value: localhost.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.AgentPort">
+            <summary>
+            Gets or sets the Jaeger agent port. Default value: 6831.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.Endpoint">
+            <summary>
+            Gets or sets the Jaeger HTTP endpoint. Default value: "http://localhost:14268/api/traces".
+            Typically https://jaeger-server-name:14268/api/traces.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.MaxPayloadSizeInBytes">
+            <summary>
+            Gets or sets the maximum payload size in bytes. Default value: 4096.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.ExportProcessorType">
+            <summary>
+            Gets or sets the export processor type to be used with Jaeger Exporter. The default value is <see cref="F:OpenTelemetry.ExportProcessorType.Batch"/>.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.BatchExportProcessorOptions">
+            <summary>
+            Gets or sets the BatchExportProcessor options. Ignored unless ExportProcessorType is BatchExporter.
+            </summary>
+        </member>
+        <member name="P:OpenTelemetry.Exporter.JaegerExporterOptions.HttpClientFactory">
+            <summary>
+            Gets or sets the factory function called to create the <see
+            cref="T:System.Net.Http.HttpClient"/> instance that will be used at runtime to
+            transmit spans over HTTP. The returned instance will be reused for
+            all export invocations.
+            </summary>
+            <remarks>
+            Notes:
+            <list type="bullet">
+            <item>This is only invoked for the <see
+            cref="F:OpenTelemetry.Exporter.JaegerExportProtocol.HttpBinaryThrift"/> protocol.</item>
+            <item>The default behavior when using the <see
+            cref="M:OpenTelemetry.Trace.JaegerExporterHelperExtensions.AddJaegerExporter(OpenTelemetry.Trace.TracerProviderBuilder,System.Action{OpenTelemetry.Exporter.JaegerExporterOptions})"/> extension is if an <a
+            href="https://docs.microsoft.com/dotnet/api/system.net.http.ihttpclientfactory">IHttpClientFactory</a>
+            instance can be resolved through the application <see
+            cref="T:System.IServiceProvider"/> then an <see cref="T:System.Net.Http.HttpClient"/> will be
+            created through the factory with the name "JaegerExporter" otherwise
+            an <see cref="T:System.Net.Http.HttpClient"/> will be instantiated directly.</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="T:OpenTelemetry.Exporter.JaegerExportProtocol">
+            <summary>
+            Defines the exporter protocols supported by the <see cref="T:OpenTelemetry.Exporter.JaegerExporter"/>.
+            </summary>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.JaegerExportProtocol.UdpCompactThrift">
+            <summary>
+            Compact thrift protocol over UDP.
+            </summary>
+            <remarks>
+            Note: Supported by Jaeger Agents only.
+            </remarks>
+        </member>
+        <member name="F:OpenTelemetry.Exporter.JaegerExportProtocol.HttpBinaryThrift">
+            <summary>
+            Binary thrift protocol over HTTP.
+            </summary>
+            <remarks>
+            Note: Supported by Jaeger Collectors only.
+            </remarks>
+        </member>
+        <member name="T:OpenTelemetry.Trace.JaegerExporterHelperExtensions">
+            <summary>
+            Extension methods to simplify registering a Jaeger exporter.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Trace.JaegerExporterHelperExtensions.AddJaegerExporter(OpenTelemetry.Trace.TracerProviderBuilder)">
+            <summary>
+            Adds Jaeger exporter to the TracerProvider.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> builder to use.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Trace.JaegerExporterHelperExtensions.AddJaegerExporter(OpenTelemetry.Trace.TracerProviderBuilder,System.Action{OpenTelemetry.Exporter.JaegerExporterOptions})">
+            <summary>
+            Adds Jaeger exporter to the TracerProvider.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> builder to use.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.JaegerExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Trace.JaegerExporterHelperExtensions.AddJaegerExporter(OpenTelemetry.Trace.TracerProviderBuilder,System.String,System.Action{OpenTelemetry.Exporter.JaegerExporterOptions})">
+            <summary>
+            Adds Jaeger exporter to the TracerProvider.
+            </summary>
+            <param name="builder"><see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> builder to use.</param>
+            <param name="name">Name which is used when retrieving options.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.JaegerExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Trace.TracerProviderBuilder"/> to chain the calls.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Trace.SemanticConventions">
+            <summary>
+            Constants for semantic attribute names outlined by the OpenTelemetry specifications.
+            <see href="https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/README.md"/> and
+            <see href="https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/semantic_conventions/README.md"/>.
+            </summary>
+        </member>
+        <member name="T:OpenTelemetry.Trace.SpanAttributeConstants">
+            <summary>
+            Defines well-known span attribute keys.
+            </summary>
+        </member>
+        <member name="T:OpenTelemetry.Trace.ActivityHelperExtensions">
+            <summary>
+            Extension methods on Activity.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Trace.ActivityHelperExtensions.TryGetStatus(System.Diagnostics.Activity,OpenTelemetry.Trace.StatusCode@,System.String@)">
+            <summary>
+            Gets the status of activity execution.
+            Activity class in .NET does not support 'Status'.
+            This extension provides a workaround to retrieve Status from special tags with key name otel.status_code and otel.status_description.
+            </summary>
+            <param name="activity">Activity instance.</param>
+            <param name="statusCode"><see cref="T:OpenTelemetry.Trace.StatusCode"/>.</param>
+            <param name="statusDescription">Status description.</param>
+            <returns><see langword="true"/> if <see cref="T:OpenTelemetry.Trace.Status"/> was found on the supplied Activity.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Trace.ActivityHelperExtensions.GetTagValue(System.Diagnostics.Activity,System.String)">
+            <summary>
+            Gets the value of a specific tag on an <see cref="T:System.Diagnostics.Activity"/>.
+            </summary>
+            <param name="activity">Activity instance.</param>
+            <param name="tagName">Case-sensitive tag name to retrieve.</param>
+            <returns>Tag value or null if a match was not found.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Trace.ActivityHelperExtensions.TryCheckFirstTag(System.Diagnostics.Activity,System.String,System.Object@)">
+            <summary>
+            Checks if the user provided tag name is the first tag of the <see cref="T:System.Diagnostics.Activity"/> and retrieves the tag value.
+            </summary>
+            <param name="activity">Activity instance.</param>
+            <param name="tagName">Tag name.</param>
+            <param name="tagValue">Tag value.</param>
+            <returns><see langword="true"/> if the first tag of the supplied Activity matches the user provide tag name.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Internal.ExceptionExtensions.ToInvariantString(System.Exception)">
+            <summary>
+            Returns a culture-independent string representation of the given <paramref name="exception"/> object,
+            appropriate for diagnostics tracing.
+            </summary>
+            <param name="exception">Exception to convert to string.</param>
+            <returns>Exception as string with no culture.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Internal.Guard">
+            <summary>
+            Methods for guarding against exception throwing values.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNull(System.Object,System.String)">
+            <summary>
+            Throw an exception if the value is null.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNullOrEmpty(System.String,System.String)">
+            <summary>
+            Throw an exception if the value is null or empty.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNullOrWhitespace(System.String,System.String)">
+            <summary>
+            Throw an exception if the value is null or whitespace.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfZero(System.Int32,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is zero.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="message">The message to use in the thrown exception.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfInvalidTimeout(System.Int32,System.String)">
+            <summary>
+            Throw an exception if the value is not considered a valid timeout.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfOutOfRange(System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is not within the given range.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <param name="min">The inclusive lower bound.</param>
+            <param name="max">The inclusive upper bound.</param>
+            <param name="minName">The name of the lower bound.</param>
+            <param name="maxName">The name of the upper bound.</param>
+            <param name="message">An optional custom message to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfOutOfRange(System.Double,System.String,System.Double,System.Double,System.String,System.String,System.String)">
+            <summary>
+            Throw an exception if the value is not within the given range.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <param name="min">The inclusive lower bound.</param>
+            <param name="max">The inclusive upper bound.</param>
+            <param name="minName">The name of the lower bound.</param>
+            <param name="maxName">The name of the upper bound.</param>
+            <param name="message">An optional custom message to use in the thrown exception.</param>
+        </member>
+        <member name="M:OpenTelemetry.Internal.Guard.ThrowIfNotOfType``1(System.Object,System.String)">
+            <summary>
+            Throw an exception if the value is not of the expected type.
+            </summary>
+            <param name="value">The value to check.</param>
+            <param name="paramName">The parameter name to use in the thrown exception.</param>
+            <typeparam name="T">The type attempted to convert to.</typeparam>
+            <returns>The value casted to the specified type.</returns>
+        </member>
+        <member name="T:OpenTelemetry.Internal.OpenTelemetrySdkEventSource">
+            <summary>
+            EventSource implementation for OpenTelemetry SDK implementation.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider">
+            <summary>
+            An environment variable based <see cref="T:Microsoft.Extensions.Configuration.ConfigurationProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider.#ctor">
+            <summary>
+            Initializes a new instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider.#ctor(System.String)">
+            <summary>
+            Initializes a new instance with the specified prefix.
+            </summary>
+            <param name="prefix">A prefix used to filter the environment variables.</param>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider.Load">
+            <summary>
+            Loads the environment variables.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider.ToString">
+            <summary>
+            Generates a string representing this provider name and relevant details.
+            </summary>
+            <returns> The configuration name. </returns>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource">
+            <summary>
+            Represents environment variables as an <see cref="T:Microsoft.Extensions.Configuration.IConfigurationSource"/>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource.Prefix">
+            <summary>
+            A prefix used to filter environment variables.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource.Build(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>
+            Builds the <see cref="T:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider"/> for this source.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</param>
+            <returns>A <see cref="T:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider"/></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions">
+            <summary>
+            Extension methods for registering <see cref="T:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider"/> with <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables(Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>
+            Adds an <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/> that reads configuration values from environment variables.
+            </summary>
+            <param name="configurationBuilder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String)">
+            <summary>
+            Adds an <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/> that reads configuration values from environment variables
+            with a specified prefix.
+            </summary>
+            <param name="configurationBuilder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="prefix">The prefix that environment variable names must start with. The prefix will be removed from the environment variable names.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Action{Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource})">
+            <summary>
+            Adds an <see cref="T:Microsoft.Extensions.Configuration.IConfigurationProvider"/> that reads configuration values from environment variables.
+            </summary>
+            <param name="builder">The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/> to add to.</param>
+            <param name="configureSource">Configures the source.</param>
+            <returns>The <see cref="T:Microsoft.Extensions.Configuration.IConfigurationBuilder"/>.</returns>
+        </member>
+        <member name="T:Microsoft.Extensions.Options.DelegatingOptionsFactory`1">
+            <summary>
+            Implementation of <see cref="T:Microsoft.Extensions.Options.IOptionsFactory`1"/>.
+            </summary>
+            <typeparam name="TOptions">The type of options being requested.</typeparam>
+        </member>
+        <member name="M:Microsoft.Extensions.Options.DelegatingOptionsFactory`1.#ctor(System.Func{Microsoft.Extensions.Configuration.IConfiguration,System.String,`0},Microsoft.Extensions.Configuration.IConfiguration,System.Collections.Generic.IEnumerable{Microsoft.Extensions.Options.IConfigureOptions{`0}},System.Collections.Generic.IEnumerable{Microsoft.Extensions.Options.IPostConfigureOptions{`0}},System.Collections.Generic.IEnumerable{Microsoft.Extensions.Options.IValidateOptions{`0}})">
+            <summary>
+            Initializes a new instance with the specified options configurations.
+            </summary>
+            <param name="setups">The configuration actions to run.</param>
+            <param name="postConfigures">The initialization actions to run.</param>
+            <param name="validations">The validations to run.</param>
+        </member>
+        <member name="M:Microsoft.Extensions.Options.DelegatingOptionsFactory`1.Create(System.String)">
+            <summary>
+            Returns a configured <typeparamref name="TOptions"/> instance with the given <paramref name="name"/>.
+            </summary>
+            <param name="name">The name of the <typeparamref name="TOptions"/> instance to create.</param>
+            <returns>The created <typeparamref name="TOptions"/> instance with the given <paramref name="name"/>.</returns>
+            <exception cref="T:Microsoft.Extensions.Options.OptionsValidationException">One or more <see cref="T:Microsoft.Extensions.Options.IValidateOptions`1"/> return failed <see cref="T:Microsoft.Extensions.Options.ValidateOptionsResult"/> when validating the <typeparamref name="TOptions"/> instance been created.</exception>
+            <exception cref="T:System.MissingMethodException">The <typeparamref name="TOptions"/> does not have a public parameterless constructor or <typeparamref name="TOptions"/> is <see langword="abstract"/>.</exception>
+        </member>
+    </members>
+</doc>

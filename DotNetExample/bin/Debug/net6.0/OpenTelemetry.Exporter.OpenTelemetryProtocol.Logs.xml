@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OpenTelemetry.Exporter.OpenTelemetryProtocol.Logs</name>
+    </assembly>
+    <members>
+        <member name="T:OpenTelemetry.Logs.OtlpLogExporterHelperExtensions">
+            <summary>
+            Extension methods to simplify registering of the OpenTelemetry Protocol (OTLP) exporter.
+            </summary>
+        </member>
+        <member name="M:OpenTelemetry.Logs.OtlpLogExporterHelperExtensions.AddOtlpExporter(OpenTelemetry.Logs.OpenTelemetryLoggerOptions)">
+            <summary>
+            Adds OTLP Exporter as a configuration to the OpenTelemetry ILoggingBuilder.
+            </summary>
+            <remarks><inheritdoc cref="M:OpenTelemetry.Logs.OtlpLogExporterHelperExtensions.AddOtlpExporter(OpenTelemetry.Logs.OpenTelemetryLoggerOptions,System.Action{OpenTelemetry.Exporter.OtlpExporterOptions})" path="/remarks"/></remarks>
+            <param name="loggerOptions"><see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> options to use.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> to chain the calls.</returns>
+        </member>
+        <member name="M:OpenTelemetry.Logs.OtlpLogExporterHelperExtensions.AddOtlpExporter(OpenTelemetry.Logs.OpenTelemetryLoggerOptions,System.Action{OpenTelemetry.Exporter.OtlpExporterOptions})">
+            <summary>
+            Adds OTLP Exporter as a configuration to the OpenTelemetry ILoggingBuilder.
+            </summary>
+            <param name="loggerOptions"><see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> options to use.</param>
+            <param name="configure">Callback action for configuring <see cref="T:OpenTelemetry.Exporter.OtlpExporterOptions"/>.</param>
+            <returns>The instance of <see cref="T:OpenTelemetry.Logs.OpenTelemetryLoggerOptions"/> to chain the calls.</returns>
+        </member>
+    </members>
+</doc>
